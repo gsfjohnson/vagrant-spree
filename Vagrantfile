@@ -15,6 +15,6 @@ Vagrant.configure(2) do |config|
     gem install rails -v 4.2.0
     gem install bundler
     gem install spree_cmd
-    ln -s /vagrant/mystore .
+    [ -d /vagrant/mystore ] && ln -s /vagrant/mystore .
   SHELL
 end
